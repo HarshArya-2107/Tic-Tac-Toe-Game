@@ -1,38 +1,32 @@
-.App {
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+ /* background-image: url('backg.jpg'); /* Replace 'your-wallpaper-url.jpg' with the URL or path to your desired wallpaper image */
+  background-size: cover; /* Ensure the background image covers the entire screen */
+  background-position: center; /* Center the background image */
+}
+
+.game {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.game-board {
+  margin-top: 20px;
+}
+.game-info {
+  font-size: 35px; /* Increase the font size for the winner status */
+  font-weight: bold; /* Make the winner status bold for emphasis */
+  color: black; /* Change the color of the winner status to red */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.square {
+  width: 70px;
+  height: 70px;
+  font-size: 40px;
+  margin: 4px;
+  padding: 12px;
 }
